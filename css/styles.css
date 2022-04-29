@@ -183,7 +183,6 @@ footer p {
     .form-control  {
         flex-direction: row;
         margin-bottom: 15px;
-        justify-content: space-between;
     }
     
     .box-control {
@@ -207,6 +206,8 @@ footer p {
         justify-content: flex-start;
     }
 
-    
+    .form-control label {
+        width: 25%;
+      }
 
 }
