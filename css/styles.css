@@ -61,8 +61,13 @@ form {
     color: rgb(131, 131, 131);
 }
 
+#zip {
+    width: 50%;
+}
+
 input[type="text"],
-input[type="email"] {
+input[type="email"],
+input[type="tel"] {
     background: rgb(229, 229, 229);
     border-radius: 5px;
     border: none;
@@ -104,7 +109,9 @@ input[type="checkbox"] {
   margin-bottom: 15px;
 }
 
-input:focus {
+input:focus,
+select:focus,
+textarea:focus {
     background-color: rgb(198, 198, 198);
 }
 
@@ -115,6 +122,7 @@ textarea {
     background-color: rgb(229, 229, 229);
     border: none;
     border-radius: 5px;
+    transition: background-color 2s;
 }
 
 select {
@@ -124,6 +132,7 @@ select {
     width: 100%;
     font-size: 1.3em;
     padding: 10px;
+    transition: background-color 2s;
 }
 
 input::placeholder {
@@ -158,12 +167,17 @@ footer p {
 
 @media screen and (min-width: 768px) {
     .sign_up {
-        max-width: 50%;
+        max-width: 70%;
     }
 
     form {
-        max-width: 50%;
+        max-width: 70%;
         margin: auto;
+    }
+
+    #zip {
+        width: 25%;
+        justify-content: left;
     }
 
     .form-control  {
@@ -184,6 +198,7 @@ footer p {
 
     input[type="text"],
     input[type="email"],
+    input[type="tel"],
     select {
         width: 75%;
     }
@@ -191,5 +206,7 @@ footer p {
     input[type="radio"] {
         justify-content: flex-start;
     }
+
+    
 
 }
